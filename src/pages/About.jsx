@@ -1,8 +1,21 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 const About = () =>{
+    const [about, setAbout] = useState()
+    const navigate = useNavigate();
+
+
+ const handleLogin = () =>{
+  setAbout(true)
+  navigate("/")
+ }
     return(
        <>
-        <h1>About</h1> 
-        <p>alcune informazione dell'applicazione</p>
+      <p>contenuto dell' app</p>
+      <div>
+           <button onClick={handleLogin}>login</button>
+        </div>
         </>
     )
 }
