@@ -1,14 +1,9 @@
-import { Navigate, Route, Routes } from "react-router-dom"
+import {Route, Routes } from "react-router-dom"
 import Home from "./pages/home"
 import About from "./pages/About"
-
 import Layout from "./layouts/layout"
 
-
-
-
 const App = () => {
-
   return (
     <>
       <Routes>

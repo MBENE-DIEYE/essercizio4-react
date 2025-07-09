@@ -2,6 +2,7 @@ import { useCallback, useContext, useMemo, useState } from "react"
 // import { useFetech } from "./hooks/useFetch"
 import useFilteredTodos from "../hooks/useFilteredTodos"
 import { TodoContext } from "../provider/TodoProvider"
+import { Link } from "react-router-dom"
 
 const TodoList = () => {
 // const inputRef = useRef()
@@ -39,7 +40,7 @@ const TodoList = () => {
                         <ul key={item.id}>
                             {
                                 <>
-                                <li>{item.userID}</li>
+                                <li> <Link to="/item/${item.id}"></Link> {item.userID}</li>
                                 <li>{item.title} 
                                     <button onClick={()=>setData(item.id)}>{item.completa ? "annulla" :"completa"}</button>
                                 </li>
