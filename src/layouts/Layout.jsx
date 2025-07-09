@@ -1,9 +1,8 @@
-import Navbar from "../pages/navbar"
-import Footer from "../pages/Footer"
+import Navbar from "../navbar"
+import Footer from "../Footer"
 import { Outlet } from "react-router-dom"
 
-const Layout = ({about, 
-    setAbout}) =>{
+const Layout = () =>{
     return(
         <>
         <Navbar />
