@@ -26,7 +26,6 @@ const TodoList = () => {
     }
 
     if (loading) {
-
         <p>caricamento...</p>
     }
     if (error) {
@@ -61,10 +60,7 @@ const TodoList = () => {
                                     </>
                                 }
                             </ul>
-
                         </>
-
-
                     )
                 })
             }
